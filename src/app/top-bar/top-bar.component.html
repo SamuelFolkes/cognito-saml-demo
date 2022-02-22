@@ -1,0 +1,16 @@
+<div style="display:flex">
+    <a [routerLink]="['/']">
+        <h1>Cognito Demo - Luma</h1>
+    </a>
+
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/reports">Reports</a></li>
+    </ul>
+</div>
+
+  
+<!--<a *ngIf="!isAuth" class="button fancy-button"><i class="material-icons">login</i>Sign In</a>-->
+<a *ngIf="isAuth" class="button fancy-button" (click)="logout()"><i class="material-icons">logout</i>Sign Out</a>
